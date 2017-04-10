@@ -1,0 +1,139 @@
+//Fonts
+@header_font: 'Lusitana', serif;
+@body_font: 'News Cycle', sans-serif;
+
+//Colours
+@blue_dark: #00244C;
+@blue_med: #003066;
+@blue_light: #0F5199;
+@beige_dark: #EBA732;
+@beige_med: #FFEBC8;
+@beige_light: #FFF9ED;
+
+//Resets
+html {
+	font-size: 62.5%;
+}
+
+html, body, header, nav, footer, aside, section, address, div, span, p, a, h1, h2, h3, h4, h5, h6, input, textarea, ul, li, img, svg {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+img, svg {
+	display: block;
+	border: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+body {
+	background-color: @beige_light;
+	background-image: url('assets/background@2x.png');
+	background-size: 5%;
+	font-family: @body_font;
+	color: #131313;
+}
+
+.wrapper {
+	max-width: 102.4rem;
+	margin: auto;
+	position: relative;
+}
+
+header {
+	padding: 8rem 0;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.content {
+	width: 74%;
+	margin-right: 1%;
+	float: left;
+}
+
+.sidebar {
+	width: 24%;
+	margin-left: 1%;
+	float: right;
+}
+
+h1, h2, h3 {
+	font-family: @header_font;
+	font-weight: normal;
+	margin-bottom: 0.6em;
+}
+
+a, a:visited {
+	color: @blue_light;
+}
+
+a:hover, a:active {
+	color: @beige_dark;
+	text-decoration: none;
+}
+
+article, aside {
+	border: 1rem solid @blue_light;
+	border-image: linear-gradient(90deg, transparent, 
+		transparent 40%, 
+		#000000 40%, 
+		#000000 50%, 
+		transparent 40%), 
+		linear-gradient(0deg, transparent, 
+			transparent 40%, 
+			#000000 40%, 
+			#000000 42%, 
+			transparent 43%);
+	border-image-width: 1rem;
+	border-image-slice: 1;
+	border-image-repeat: repeat;
+	background-color: #FFF;
+	padding: 2rem;
+	margin-bottom: 4rem;
+
+	h2 {
+		font-size: 2.4rem;
+		clear: both;
+	}
+
+	p {
+		font-size: 1.6rem;
+		line-height: 1.4;
+		margin-bottom: 1.2rem;
+	}
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	time {
+		float: right;
+		padding: 0.9rem;
+		line-height: 1rem;
+		background-color: #131313;
+		color: #FFF;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.6rem;
+		font-size: 1.6rem;
+		margin-bottom: 2rem;
+	}
+
+	h3 {
+		font-size: 1.6rem;
+		text-transform: capitalize;
+		line-height: 1.6em
+	}
+}
